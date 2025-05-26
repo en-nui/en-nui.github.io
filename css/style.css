@@ -58,3 +58,28 @@ footer {
     color: teal; /* Example highlight color */
     font-weight: bold;
 }
+
+/* Navigation Styling */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Make list items display in a row */
+    justify-content: center; /* Center the navigation items */
+    gap: 20px; /* Space between navigation items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+nav li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark grey text for links */
+    padding: 0.5rem 1rem; /* Padding around each link text */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    font-weight: bold; /* Make navigation links bold */
+    text-transform: uppercase; /* Make navigation text uppercase */
+    letter-spacing: 0.05em; /* Add a little space between letters */
+}
+
+nav li a:hover {
+    color: teal; /* Highlight color on hover (matching your .highlight example) */
+}
