@@ -82,4 +82,54 @@ nav li a {
 
 nav li a:hover {
     color: teal; /* Highlight color on hover (matching your .highlight example) */
+
+/* Header Splash Styling */
+.header-splash {
+    text-align: left; /* Align text to the left */
+    padding: 10px 20px; /* Some padding around the text */
+    font-size: 0.9em; /* Slightly smaller font size */
+    line-height: 1.4; /* Adjust line height for readability */
+    color: #555; /* Slightly lighter grey for splash text */
+    max-width: 300px; /* Limit its width so it stays compact */
+    margin-bottom: 20px; /* Space below the splash before navigation */
+}
+
+.header-splash strong {
+    font-size: 1.2em; /* Make the name slightly larger */
+    color: #333; /* Darker color for the name */
+}
+
+/* Adjust header and nav for the new splash */
+header {
+    display: flex; /* Use flexbox to arrange splash and nav */
+    justify-content: space-between; /* Pushes splash to left, nav to right */
+    align-items: center; /* Vertically centers items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 1rem 20px; /* Adjust padding */
+    border-bottom: 1px solid #eee; /* Subtle line at the bottom */
+}
+
+/* Ensure navigation doesn't get pushed too far by the splash */
+nav {
+    margin-left: auto; /* Push navigation to the right */
+}
+
+/* Responsive adjustments for header */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack splash and nav vertically */
+        align-items: flex-start; /* Align all items to the left */
+        text-align: left;
+    }
+
+    nav {
+        margin-left: 0; /* Remove auto margin */
+        width: 100%; /* Make navigation take full width */
+        margin-top: 10px; /* Space between splash and nav */
+    }
+
+    nav ul {
+        justify-content: flex-start; /* Align nav items to the left on small screens */
+    }
+}
 }
